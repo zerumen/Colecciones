@@ -36,7 +36,7 @@ public class Main {
                 System.out.println("Marca:" + coche.getMarca()
                         + " Modelo:" + coche.getModelo() + " Cilindrada:"
                         + coche.getCilindrada() + " DNI:"
-                        + coche.getDniPropietario());
+                        + coche.getPropietario());
             }
         }
         System.out.println("-----------------");
@@ -51,7 +51,7 @@ public class Main {
         String dni = scanner.next();
 
         for (Coche coche : coches) {
-            String dniPropietario = coche.getDniPropietario();
+            Persona dniPropietario = coche.getPropietario();
             if (dniPropietario.equals(dni)) {
                 System.out.println("Modelo: " + coche.getModelo());
             }
@@ -64,7 +64,7 @@ public class Main {
                 System.out.println("Marca:" + coche.getMarca()
                         + " Modelo:" + coche.getModelo() + " Cilindrada:"
                         + coche.getCilindrada() + " DNI:"
-                        + coche.getDniPropietario());
+                        + coche.getPropietario());
             }
         }
 
@@ -81,12 +81,12 @@ public class Main {
         System.out.println("Marca: " + mapCoche.get("12345678Z").getMarca());
         System.out.println("Cilindrada: " + mapCoche.get("12345678Z").getCilindrada());
         System.out.println("Modelo: " + mapCoche.get("12345678Z").getModelo());
-        System.out.println("Dni: " + mapCoche.get("12345678Z").getDniPropietario());
+        System.out.println("Dni: " + mapCoche.get("12345678Z").getPropietario());
 
         System.out.println("-----------------");
 
         for (String clave : mapCoche.keySet()) {
-            System.out.println("DNI:" + mapCoche.get(clave).getDniPropietario()
+            System.out.println("DNI:" + mapCoche.get(clave).getPropietario()
                     + " Marca: " + mapCoche.get(clave).getModelo() + " Modelo: "
                     + mapCoche.get(clave).getMarca());
         }
@@ -102,7 +102,7 @@ public class Main {
 
         for (String clave : mapCoche.keySet()) {
             if (mapCoche.get(clave).getMarca() == Marca.FORD) {
-                System.out.println("DNI:" + mapCoche.get(clave).getDniPropietario()
+                System.out.println("DNI:" + mapCoche.get(clave).getPropietario()
                         + " Marca: " + mapCoche.get(clave).getModelo() + " Modelo: "
                         + mapCoche.get(clave).getMarca());
             }
