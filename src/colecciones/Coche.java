@@ -19,7 +19,7 @@ public class Coche {
     public Coche() {
     }
 
-    public Coche(Marca marca, String modelo, int cilindrada, String dniPropietario) {
+    public Coche(Marca marca, String modelo, int cilindrada, Persona propietario) {
         this.marca = marca;
         this.modelo = modelo;
         this.cilindrada = cilindrada;

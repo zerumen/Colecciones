@@ -25,7 +25,7 @@ public class Persona {
         this.nombre = nombre;
         this.ape1 = ape1;
         this.sexos = sexos;
-
+        this.coches= new ArrayList<>();
     }
 
     public Persona() {

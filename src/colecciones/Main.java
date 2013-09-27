@@ -23,7 +23,7 @@ public class Main {
         // TODO code application logic here
 
         //Ejercicio 4
-        List<Coche> coches = new ArrayList<>();
+    List<Coche> coches = new ArrayList<>();/*
 
         coches.add(new Coche(Marca.CITROEN, "Xsara", 125, "48587160M"));
         coches.add(new Coche(Marca.FORD, "Escort", 125, "48597167Q"));
@@ -106,6 +106,26 @@ public class Main {
                         + " Marca: " + mapCoche.get(clave).getModelo() + " Modelo: "
                         + mapCoche.get(clave).getMarca());
             }
-        }
+        }*/
+        
+        
+    }
+    
+        
+        
+        
+        
+
+    public Main() {
+        Persona persona1 = new Persona("22586755l","Pepin", "Junen", Sexo.HOMBRE);
+        Coche coche1 =new Coche (Marca.CITROEN, "Xsara", 125, null);
+        Coche coche2=new Coche (Marca.FORD, "juenes", 125, null);
+        coche1.setPropietario(persona1);
+        coche2.setPropietario(persona1);
+        
+         List<Coche> coches;
+         persona1.getCoches().add(coche1);
+         persona1.getCoches().add(coche2);
+        
     }
 }
